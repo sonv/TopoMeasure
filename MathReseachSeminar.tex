@@ -1,0 +1,216 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  openany]{book}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={MATH 312: Topology and Measure Theory},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{MATH 312: Topology and Measure Theory}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\chapter*{Syllabus}\label{syllabus}
+\addcontentsline{toc}{chapter}{Syllabus}
+
+\subsection*{Key information}\label{key-information}
+\addcontentsline{toc}{subsection}{Key information}
+
+\begin{itemize}
+\tightlist
+\item
+  Instructors: Truong-Son Van
+\item
+  Email:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{mailto:son.van+311@fulbright.edu.vn}{\nolinkurl{son.van+311@fulbright.edu.vn}}
+  \end{itemize}
+\item
+  Class time: Tu Th, 9:45 am - 11:15 am
+\item
+  Class Location: BRDW CR6
+\item
+  Prerequisites: MATH 307
+\end{itemize}
+
+\section*{Textbooks \& References}\label{textbooks-references}
+\addcontentsline{toc}{section}{Textbooks \& References}
+
+\begin{itemize}
+\item
+  \textbf{Textbook:} \href{https://draft-r-bass-scholar.media.uconn.edu/wp-content/uploads/sites/3926/2024/12/real-analysis-for-graduate-students_version-50_accessible.pdf}{Bass, Real Analysis for Graduate Students, version 5.0}
+\item
+  Useful references:
+
+  \begin{itemize}
+  \item
+    Munkres, Topology, 2nd Edition
+  \item
+    Folland, Real Analysis, 2nd Edition
+  \end{itemize}
+\end{itemize}
+
+\subsection*{Course description}\label{course-description}
+\addcontentsline{toc}{subsection}{Course description}
+
+This course provides an introduction to the fundamental concepts of topology and measure theory, with an emphasis on their applications in analysis and modern mathematical frameworks. The topology portion of the course covers topics such as topological spaces, open and closed sets, continuity, compactness, connectedness, and convergence. We will explore how these concepts unify various branches of mathematics and lay the groundwork for functional analysis and differential geometry.
+In the second part of the course, we will delve into measure theory, starting with sigma-algebras, measures, and measurable functions. Students will learn the construction of Lebesgue measure and how it differs from traditional notions of size and volume. The course will then focus on integration theory, particularly the Lebesgue integral, and explore convergence theorems, such as Fatou's Lemma, the Dominated Convergence Theorem, and Fubini's Theorem. Throughout, we will emphasize the interplay between topology and measure theory in understanding modern analysis, including the development of probability theory and ergodic theory.
+By the end of the course, students will gain a strong conceptual understanding of both fields and be prepared for advanced studies in analysis, probability, and financial math.
+
+\section*{Assessment}\label{assessment}
+\addcontentsline{toc}{section}{Assessment}
+
+During the course, students are expected to compute their own percentage
+points based on the following scheme.
+The instructor is not responsible for providing the running percentage.
+
+\begin{longtable}[]{@{}cc@{}}
+\toprule\noalign{}
+\textbf{Form of assessment} & \textbf{Weight} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Homework & 40\% \\
+Quizzes & 10\% \\
+Midterm & 25\% \\
+Final & 25\% \\
+\end{longtable}
+
+The following is the letter grade breakdown. It is based on
+common practice in the United States.
+
+\begin{longtable}[]{@{}cc@{}}
+\toprule\noalign{}
+\textbf{Letter Grade} & \textbf{Percentage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A & {[}93,100{]} \\
+A- & {[}90,93) \\
+B+ & {[}87,90) \\
+B & {[}83,87) \\
+B- & {[}80, 83) \\
+C+ & {[}77,80) \\
+C & {[}73,77) \\
+C- & {[}70,73) \\
+D+ & {[}67,70) \\
+D & {[}60, 66) \\
+F & {[}0,60) \\
+\end{longtable}
+
+\subsection*{Collaboration \& Plagiarism}\label{collaboration-plagiarism}
+\addcontentsline{toc}{subsection}{Collaboration \& Plagiarism}
+
+Plagiarism is the act of submitting the intellectual property of another person as your own. It is one of the most serious of academic offenses. Acts of plagiarism include, but are not limited to:
+
+\begin{itemize}
+\item
+  Copying, or allowing someone to copy, all or a part of another person's work and presenting it as your own, or not giving proper credit.
+\item
+  Purchasing a paper from someone (or a website) and presenting it as your own work.
+\item
+  Re-submitting your work from another course to fulfill a requirement in another course.
+\end{itemize}
+
+Further details can be found in the Code of Academic Integrity {[}\href{https://fulbright.edu.vn/articles/Code\%20of\%20Academic\%20Integrity/Code\%20of\%20Academic\%20Integrity_\%20Excom\%20Endorsed.pdf}{link}{]}.
+
+\section*{Learning Support}\label{learning-support}
+\addcontentsline{toc}{section}{Learning Support}
+
+In addition to your course instructors, there are other resources available to support your
+academic work at Fulbright, including one-on-one consultations with learning support staff,
+supplementary workshops, and both individual and group tutoring and mentoring in course
+content, language learning, and academic skills. If you would like to request learning support,
+please contact Fulbright Learning Support (\url{https://learning-support.notion.site}).
+
+\section*{Wellbeing}\label{wellbeing}
+\addcontentsline{toc}{section}{Wellbeing}
+
+Mental health and wellbeing are essential for the success of your academic journey. The
+Fulbright Wellness Center provides various services including counseling, safer community,
+and accessibility services. If you are experiencing undue personal or academic stress, are
+feeling unsafe, or would like to know more about issues related to wellbeing, please contact
+the Wellness Center via \href{mailto:wellness@fulbright.edu.vn}{\nolinkurl{wellness@fulbright.edu.vn}} or visit the Wellness Center office on
+Level 5 of the Crescent campus.
+
+For more information, pleaes check
+\url{https://onestop.fulbright.edu.vn/s/article/Health-and-Wellness-Introduction}
+
+\end{document}
