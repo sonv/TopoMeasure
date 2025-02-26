@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'aux/hw2.blg'
+[28] biber:340> INFO - === Wed Feb 26, 2025, 23:24:34
+[34] Biber.pm:418> INFO - Reading 'aux/hw2.bcf'
+[57] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
+[62] bbl.pm:654> INFO - Writing 'aux/hw2.bbl' with encoding 'UTF-8'
+[62] bbl.pm:757> INFO - Output to aux/hw2.bbl
+[62] Biber.pm:130> WARN - The file 'aux/hw2.bcf' does not contain any citations!
+[62] Biber.pm:132> INFO - WARNINGS: 1
