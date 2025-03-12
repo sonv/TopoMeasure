@@ -1,0 +1,96 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+%\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{../bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 312: Midterm }
+\author{Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+\address{}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+%\linenumbers
+\maketitle
+
+
+\section*{Instructions}
+
+\begin{enumerate}
+	\item Pick 5 out of 6 questions to do. Specify your choices. If you don't I'll take the minimum of all possible points.
+	\item Show your work, be as thorough as possible.
+	\item You have 80 minutes
+\end{enumerate}
+
+
+\newpage
+
+\begin{question}[Quick questions, 5 points each] Complete the following:
+	\begin{enumerate}
+		\item Give the definition of a topological space.
+
+		\item Give the definition of a measure space (include definitions of sigma algebra and measure).
+
+		\item Give an example of a topological space where every set is a clopen set.
+
+		\item What does it mean for a set to be compact in a topology?
+
+		\item What is a continuous function from $(X, \tau_X)$ to $(Y, \tau_Y)$?
+	\end{enumerate}
+\end{question}
+
+
+\begin{question}[True or False? Justify. 20 points.]
+	A set $K$ in a topological space $(X, \tau)$ is closed if it is compact.
+
+\end{question}
+
+\begin{question}[True or False? Justify. 20 points.]
+	A closed subset of a compact set is compact.
+\end{question}
+
+\begin{question}[True or False? Justify. 20 points.]
+	Let $f: (X, \tau_X) \to (Y, \tau_Y)$ be continuous.
+	If $K$ is compact, then $f(K)$ is compact.
+\end{question}
+
+\begin{question}[20 points]
+	Let $(X, \tau_X)$ and $(Y, \tau_Y)$ be topological spaces where $Y$ is compact.
+	If $N$ is an open set of $X\times Y$ containing the slice $\set{x_0} \times Y$ of $X \times Y$.
+	Prove that there exists a neighborhood $W$ of $x_0$ such that $W\times Y \subseteq N$.
+\end{question}
+
+\begin{question}[20 points] Complete the following:
+	\begin{enumerate}
+		\item Prove that if $c_{nj}$ are non-negative real numbers that increase in $n$ to $c_j$ for each $j$,
+		      then
+		      \begin{equation*}
+			      \lim_{n\to \infty} \sum_{j=1}^\infty c_{nj} = \sum_{j=1}^\infty c_j \,.
+		      \end{equation*}
+
+		\item (True or False? Justify)
+		      Suppose $\mu_1, \mu_2, \dots$ are measures on a measurable space $(X, \mathcal{A})$
+		      and $\mu_n (A)$ is increasing for each $A \in \mathcal{A}$.
+		      Define
+		      \begin{equation*}
+			      \mu(A) = \lim_{n\to \infty} \mu_n(A) \,.
+		      \end{equation*}
+		      Then, $\mu$ is a measure on $(X, \mathcal{A})$.
+	\end{enumerate}
+\end{question}
+
+\end{document}
