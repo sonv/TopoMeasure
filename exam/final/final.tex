@@ -1,0 +1,65 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+%\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{../bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 312: Final}
+\author{Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+\address{}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+%\linenumbers
+\maketitle
+
+
+\section*{Instructions}
+
+\begin{enumerate}
+	\item Pick 4 out of 5 questions to do. Specify your choices. If you don't I'll take the minimum of all possible points.
+	\item Show your work, be as thorough as possible.
+	\item You have 80 minutes
+\end{enumerate}
+
+
+\newpage
+
+\begin{question}
+	State and prove the monotone class theorem.
+\end{question}
+
+\begin{question}
+	State and prove Fatou's lemma.
+\end{question}
+
+
+\begin{question}[True or False? Justify. 20 points.]
+	Show that every compact Hausdorff space is normal.
+\end{question}
+
+
+\begin{question}[True or False? Justify. 20 points.]
+	Let $f: (X, \tau_X) \to (Y, \tau_Y)$ be continuous.
+	If $K$ is compact, then $f(K)$ is compact.
+\end{question}
+
+\begin{question}[True or False? Justify. 20 points.]
+	If $f_n \to f$ in measure then there is a subsequence $f_{n_j} \to f$ almost everywhere.
+\end{question}
+
+\end{document}
